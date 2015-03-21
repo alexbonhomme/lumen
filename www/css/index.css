@@ -1,0 +1,66 @@
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    height:100%;
+    width:100%;
+    margin:0px;
+    padding:0px;
+}
+
+#connexion-status-img {
+    width: 256px;
+    height: 256px;
+    background:url(../img/256/bulb.png) no-repeat center center;
+}
+#connexion-status {
+    width: 256px;
+    font-size:12px;
+    text-transform:uppercase;
+}
+
+#color-controls{
+    display: none;
+}
+
+.minicolors-panel{
+    border:none;
+}
+
+.event {
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    color:#FFFFFF;
+    background-color:#333333;
+    font-size:12px;
+    margin:0px 30px;
+    padding:2px 0px;
+}
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+}
+
+.center{
+    text-align: center;
+    margin: auto;
+}
